@@ -8,9 +8,9 @@ spec:
     metadata:
       labels:
         app: hello-k8s-deployment
-      spec:
-        containers:
-        - name: hello-k8s-deployment
-          image: souvikmukherjeedocker/spring-k8s-svc:latest
-          ports:
-          - containerPort: 8080
+    spec:
+      containers:
+      - name: hello-k8s-deployment
+        image: souvikmukherjeedocker/spring-k8s-svc:latest
+        ports:
+        - containerPort: 8080
