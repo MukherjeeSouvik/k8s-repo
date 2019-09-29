@@ -13,17 +13,17 @@ spec:
       - name: hello-k8s-deployment
         image: souvikmukherjeedocker/spring-k8s-svc:latest
         ports:
-        - name: hello-k8s-deployment-port
+        - name: hk8sdp-port
           containerPort: 8080
         livenessProbe:
           httpGet:
             path: /liveness
-            port: 8080
+            port: hk8sdp-port
           initialDelaySeconds: 15
           timeoutSeconds: 30
         readinessProbe:
           httpGet:
             path: /readiness
-            port: 8080
+            port: hk8sdp-port
           initialDelaySeconds: 15
           timeoutSeconds: 30
