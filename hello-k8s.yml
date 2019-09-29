@@ -10,4 +10,4 @@ spec:
         image: souvikmukherjeedocker/spring-k8s-svc
         ports:
         -   name: hello-k8s-port
-            containerPort: 3000
+            containerPort: 8080
