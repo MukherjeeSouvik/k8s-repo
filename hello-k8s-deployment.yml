@@ -18,12 +18,12 @@ spec:
         livenessProbe:
           httpGet:
             path: /liveness
-            port: hello-k8s-deployment-port
+            port: 8080
           initialDelaySeconds: 15
           timeoutSeconds: 30
         readinessProbe:
           httpGet:
             path: /readiness
-            port: hello-k8s-deployment-port
+            port: 8080
           initialDelaySeconds: 15
           timeoutSeconds: 30
